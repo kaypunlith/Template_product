@@ -1,0 +1,308 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    height: 80vh;
+    /* background-image: url(./image/bg1.jpg); */
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8rem;
+    background-color:white;
+    box-shadow: 1px 1px 10px rgb(194, 194, 194);
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 0.5rem;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+
+.menu ul li a:hover {
+    background-color: #ea0281;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.menu ul li .active {
+    background-color: #ea0281;
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* =========text =========== */
+.text {
+    width: 400px;
+    margin: 12rem 4rem;
+    position: absolute;
+}
+
+.text h1 {
+    color: #ea0281;
+    margin-bottom: 1.3rem;
+    font-size: 40px;
+}
+
+.shop-now {
+    background-color: #ea0281;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+}
+
+.explore {
+    border-radius: 20px;
+    padding: 0.7rem 3rem;
+    margin-left: 1rem;
+}
+
+.explore:hover {
+    background-color: #ea0281;
+    color: #fff;
+}
+
+/* ============ container ============= */
+.container {
+    width: 70%;
+    margin: 5rem auto;
+}
+
+/* =============== feathuer ============= */
+.feathuer {
+    width: 100%;
+    height: 50vh;
+    /* background-color: rgba(250, 235, 215, 0.422); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    /* background-image: url('https://tse2.mm.bing.net/th?id=OIP.1vzGH707hBZg535JhmBligHaDS&pid=Api&P=0&h=220'); */
+
+}
+
+.feathuer .picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* ============= Product ================= */
+.clip-path {
+    margin-top: 4rem;
+    position: relative;
+    background-color: #f7f6f6;
+    height: 7.5vh;
+}
+
+.clip-path span {
+    height: 100%;
+    /* clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0); */
+    clip-path: polygon(0 0, 100% 0%, 91% 100%, 0% 100%);
+    background-color: #ea0281;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clip-path marquee {
+    margin-top: 1rem;
+    font-size: 18px;
+
+}
+
+.product {
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.product span {
+    clip-path: polygon(100% 0%, 84% 49%, 100% 100%, 0 100%, 17% 50%, 0 0);
+    background-color: #ea0281;
+    color: #fff;
+}
+
+.product .box-product {
+    background-color: #f8f7f7;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.product .box-product img {
+    width: 90%;
+    height: 300px;
+    margin-top: 1.3rem;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+.product .box-product img:hover {
+    transform: scale(1.03);
+}
+
+.box-product h3 {
+    padding: 1rem;
+}
+
+.box-product .price {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.box-product .star {
+    margin-top: 1.5rem;
+}
+
+.box-product .btn {
+    margin-top: rem;
+}
+
+.box-product .btn .btn-addcart {
+    border: none;
+    background-color: rgb(0, 115, 255);
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.box-product .btn .btn-cancel {
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+
+}
+
+.view-all {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin-top: 2rem;
+
+}
+
+.view-all a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.view-all:hover {
+    background-color: #ea0281;
+    color: #fff;
+}
+
+/* ============== footer =============== */
+.footer {
+    height: 60vh;
+    /* background-color: antiquewhite; */
+    position: relative;
+
+}
+
+.footer .footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(3px);
+    object-fit: cover;
+}
+
+.footer-catagory {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.footer .footer-logo {
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    float: left;
+}
+
+.footer .footer-detail {
+    width: 60%;
+    height: 100%;
+    margin-top: 5rem;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+    /* background-color: blue; */
+}
+
+.information ul li,
+.service ul li,
+.contact ul li {
+    list-style-type: none;
+    margin: 15px 0;
+
+}
+
+.information ul li a {
+    text-decoration: none;
+    color: #e3e2e2;
+
+}
+
+.service ul li a {
+    text-decoration: none;
+    color: #e3e2e2;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #f0efef;
+}
+
+.contact .icon i {
+    font-size: 35px;
+    margin: 20px 7px;
+    color: black;
+}
